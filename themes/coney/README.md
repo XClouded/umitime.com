@@ -1,93 +1,34 @@
-# Hexo Configuration
-## Docs: http://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
+# coney
+based on [Pacman](https://github.com/A-limon/pacman).
 
-# Site
-title: 听雨~
-subtitle: 昨夜卧听风吹雨，不若相忘于江湖。
-description: JAVA入道，却更擅长于WEB前端技术，最喜欢jQuery库，还喜欢学设计，风格简约·简洁·清整。爱好古中国文化，崇尚老庄自然自由之道。不喜欢规划，也不喜欢计划，因为赶不上变化。却喜欢打有准备的仗，谋定而后动，不是计划，谓之计谋矣。
-author: ToFishes
-email:
-language: zh-CN
+coney is a flat and responsive design theme for [Hexo](http://hexo.io).
 
-# URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://umitime.com
-root: /
-permalink: :year/:month/:day/:title/
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-permalink_defaults:
+you can star my porject to get information while I update the theme.
 
-# Directory
-source_dir: source
-public_dir: public
-
-# Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
-filename_case: 0
-render_drafts: false
-post_asset_folder: false
-relative_link: false
-highlight:
-  enable: true
-  line_number: true
-  tab_replace:
-
-# Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
-
-# Archives
-## 2: Enable pagination
-## 1: Disable pagination
-## 0: Fully Disable
-archive: 2
-category: 2
-tag: 2
-
-# Server
-## Hexo uses Connect as a server
-## You can customize the logger format as defined in
-## http://www.senchalabs.org/connect/logger.html
-port: 4000
-server_ip: localhost
-logger: false
-logger_format: dev
-
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
-date_format: MMM D YYYY
-time_format: H:mm:ss
-
-# Pagination
-## Set per_page to 0 to disable pagination
-per_page: 10
-pagination_dir: page
-
-# Disqus
-disqus_shortname:
-
-# Extensions
-## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
-## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: coney #landscape
-exclude_generator:
-
-# Deployment
-## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type: github
-  repo: git@github.com:tofishes/tofishes.github.io.git
   
+[Demo](http://gengbiao.me)
+
+中文说明地址点[这里](http://gengbiao.me/2014/10/13/coney%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/)
+
+##Installation
+###Install
+```
+$ git clone -b master https://github.com/coneycode/coney-hexo-theme
+```
+**Coney requires Hexo 2.4.5 and above.** 
+###Enable
+Modify `theme` setting in blog folder` _config.yml` to `coney`.
+###Update
+```
+cd themes/coney-hexo-theme
+git pull origin master
+```
+
+**please backup your `_config.yml` file before update.** 
+##Configuration
+
+Modify settings in  `/themes/coney/_config.yml`.
+```yml
 ##### Menu
 menu:
   Home: /
@@ -144,17 +85,17 @@ fancybox: false
 #### Author information
 author:
   google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
-  weibo:      ## e.g. 436062867 for http://weibo.com/436062867
+  weibo:      coneylife ## e.g. 436062867 for http://weibo.com/436062867
   twitter:    ## e.g. gengbiaosky for https://twitter.com/yangjiansky
-  github:     tofishes ## e.g. coneycode for https://github.com/coneycode
+  github:     coneycode ## e.g. coneycode for https://github.com/coneycode
   facebook:   ## e.g. gengbiao for https://favebook.com/yangjian
-  tsina:      ## e.g. 1664838973  Your weibo ID,It will be used in share button.
+  tsina:      1005055274569156 ## e.g. 1664838973  Your weibo ID,It will be used in share button.
   zhihu:     # coneylife, now it is no icon, I have push an issue to Font Awesome.
 
 #### Comment
 duoshuo: 
   enable: true  ## duoshuo.com
-  short_name: ToFishes ## duoshuo short name.
+  short_name: coney ## duoshuo short name.
 
 #### Share button
 jiathis:
@@ -164,7 +105,7 @@ jiathis:
 
 ####Baidu Analytics
 baidu_analytics:
-  enable: false
+  enable: true
   id: # your baidu analytics id
 ####Baidu Share
 baidu_share:
@@ -174,9 +115,9 @@ baidu_search:
   id:   #your baidu_search_id
   site: http://search.baidu.com/cse/search  #your can change your site instead the default site
 google_analytics:
-  enable: false
+  enable: true
   id:   ## e.g. UA-55273525-1  your google analytics ID.
-  site: ## e.g. gengbiao.me your google analytics site or set the value as auto.
+  site: gengbiao.me ## e.g. gengbiao.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 
@@ -194,3 +135,6 @@ google_cse:
 ## layout: search 
 ## title: search
 ## ---
+
+
+```
